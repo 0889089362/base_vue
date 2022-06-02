@@ -1,0 +1,4 @@
+// China
+export const locale = {
+
+};
