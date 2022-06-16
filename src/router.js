@@ -3,7 +3,7 @@ import Router from "vue-router";
 
 import HelloWorld from "@/components/HelloWorld";
 import About from "@/components/About";
-
+import Login from "@/view/LoginAuth.vue";
 Vue.use(Router);
 
 export default new Router({
@@ -18,6 +18,11 @@ export default new Router({
             path: "/about",
             name:"AboutPage",
             component:About,
+        },
+        {
+            path: "/login",
+            name:"login",
+            component:Login,
         },
     ]
 });

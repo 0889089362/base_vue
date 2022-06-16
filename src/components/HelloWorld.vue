@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <b-alert show>Default Alert</b-alert>
     {{$t('title')}}
     <h1>{{ msg }}</h1>
     <p>
