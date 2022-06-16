@@ -20,5 +20,13 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### local host
+```
+http://localhost:3000/
+
+http://localhost:3000/login
+
+http://localhost:3000/register
+
+http://localhost:3000/forgotpassword
+```

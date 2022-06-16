@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="about" style="background-color: #FFFFFF;">
     {{about}}
     About
   </div>

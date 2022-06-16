@@ -52,9 +52,10 @@ const ApiService = {
     get(resource, slug = "") {
         this.setHeader();
         return new Promise(resolve => {
-            Vue.axios.get(`${resource}/${slug}`).then((data) => {
-                this.handleResponse(data);
-                resolve(data);
+            Vue.axios.get(`${resource}/${slug}`).then((response) => {
+                console.log(response);
+                this.handleResponse(response);
+                resolve(response);
             }).catch(error => {
                 throw new Error(`[KT] ApiService ${error}`);
             });
@@ -73,6 +74,7 @@ const ApiService = {
             Vue.axios.post(`${resource}`, params, config).then((data) => {
                 this.handleResponse(data);
                 resolve(data);
+                console.log('service', data.data)
             }).catch(error => {
                 throw new Error(`[KT] ApiService ${error}`);
             });
